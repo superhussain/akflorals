@@ -2,9 +2,8 @@
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6
-  color: $orange
-  font-family: "Kalam"
-  font-weight: bold
+  color: $dark-pink
+  font-family: "Lobster", cursive
 
 .gigantic
   font-size: 110px
@@ -58,23 +57,23 @@ ul
 // Links
 
 a
-  color: $blue
+  color: $pink
   text-decoration: none
   outline: 0
   transition: color 150ms ease-in-out
 
 a:hover, a:focus
-  color: lighten($blue, 20%)
+  color: lighten($pink, 20%)
 
 
 
 // Selection colors (easy to forget)
 
 ::selection
-  background: $light
+  background: $light-pink
 
 ::-moz-selection
-  background: $light
+  background: $light-pink
 
 img::selection
   background: transparent
@@ -83,7 +82,7 @@ img::-moz-selection
   background: transparent
 
 body
-  -webkit-tap-highlight-color: $light
+  -webkit-tap-highlight-color: $light-pink
 
 
 
@@ -94,31 +93,10 @@ body
   min-height: 100vh
 
 body
-  font-family: 'Lato', sans-serif
-  background-color: #fff
-
-section
-  max-width: 1100px
-  width: 100%
-  margin: 0 auto
-
-// flex video
-
-.flex-video
-  height: 0
-  overflow: hidden
-  padding-bottom: 27.5%
-  position: relative
-
-.flex-video iframe,
-.flex-video object,
-.flex-video embed,
-.flex-video video
-  height: 100%
-  position: absolute
-  top: 0
-  width: 100%
-  left: 0
+  font-family: 'Comfortaa', sans-serif
+  background-image: url(../img/bg.jpg)
+  background-size: cover
+  background-color: $pink
 
 // clearfix hack
 
@@ -135,69 +113,3 @@ section
   height: 1%
 .clearfix
   display: block
-
-// buttons
-
-.button-light
-  padding: 0.5em 1em
-  color: $dark
-  background-color: $light
-  box-shadow: 0px 5px 0px $orange
-  transition: all 300ms cubic-bezier(0.42, 0, 0.21, 2.01)
-  &:hover
-    color: $orange
-    box-shadow: none
-
-// section styles
-.light
-  background: $light url(../img/sep-dark.png)
-    position: bottom left
-    repeat: repeat-x
-  padding: 50px
-  padding-bottom: 163px
-  section
-    color: $dark
-
-.dark
-  background: $dark url(../img/sep-light.png)
-    position: bottom right
-    repeat: repeat-x
-  padding: 50px
-  padding-bottom: 163px
-  section
-    color: $light
-
-// back to top
-
-#back-to-top
-  display: none
-  width: 70px
-  height: 50px
-  margin: 0
-  position: fixed
-  bottom: 0
-  right: 0
-  z-index: 99
-  background: darken($dark, 10%)
-  box-shadow: 0px -10px 0px $orange
-  transition: all 300ms cubic-bezier(0.42, 0, 0.21, 2.01)
-
-#back-to-top i
-  margin: 0
-  position: absolute
-  left: calc(50% - 16px)
-  color: $light
-  font-size: 32px
-  line-height: 50px
-  opacity: 0.3
-  transition: all 300ms cubic-bezier(0.42, 0, 0.21, 2.01)
-
-#back-to-top:hover
-  height: 60px
-  box-shadow: 0px -10px 0px $blue
-
-#back-to-top:hover i
-  line-height: 60px
-  color: $orange
-  opacity: 1
-

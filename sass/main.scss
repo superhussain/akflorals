@@ -12,8 +12,13 @@
 
 // 2-modules
 @import
-  "2-modules/nav";
+  "2-modules/nav",
+  "2-modules/carousel",
+  "2-modules/below",
+  "2-modules/hamburger";
 
 // 3-sections
+@import
+  "3-sections/home";
 
 // 4-layouts

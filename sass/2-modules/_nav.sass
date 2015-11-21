@@ -5,10 +5,10 @@
   text-shadow: 5px 5px 0px #B26FB2
   text-align: center
   font-size: 6em
-  line-height: 2em
+  #line-height: 2em
 
 nav
-  width: 100%
+  width: 95%
   max-width: 1200px
   margin: 0 auto
   ul
@@ -34,12 +34,18 @@ nav
       a
         background-color: $dark-pink
         color: #fff
-section
-  width: 100%
-  max-width: 1180px
-  margin: 3em auto
-  padding: 2em 4em
-  box-sizing: border-box
-  background-color: #fff
-  border-radius: 5px
-  box-shadow: 0px 0px 5em rgba(0,0,0,0.5)
+.hamburger-menu
+  display: none
+
+// logo + nav
+@media (max-width: 820px)
+  .logo h1
+    font-size: 4em
+  nav ul
+    flex-wrap: wrap
+    li
+      margin: 0.2em
+  .hamburger-menu
+    display: block
+  nav ul
+    display: none

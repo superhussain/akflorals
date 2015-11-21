@@ -1,6 +1,8 @@
 (function ($) {
   jQuery(document).ready(function ($) {
     contactForm();
+    carousel();
+    hamburger();
   });
 })(jQuery);
 
@@ -23,4 +25,23 @@ contactForm = function () {
     });
     return false;
   });
+}
+
+carousel = function() {
+  $('#carousel').owlCarousel({
+    navigation: true, // Show next and prev buttons
+    autoPlay: 7000,
+    stopOnHover: true,
+    slideSpeed: 300,
+    paginationSpeed: 400,
+    singleItem: true,
+    transitionStyle: "fadeUp"
+  })
+}
+
+hamburger = function() {
+  $('.hamburger-menu').on('click', function() {
+    $('.bar').toggleClass('animate');
+    $('nav ul').slideToggle('slow');
+  })
 }

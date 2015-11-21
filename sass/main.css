@@ -737,4 +737,65 @@ body {
 .clearfix {
   display: block; }
 
+/* line 3, C:/dev/akflorals/sass/2-modules/_nav.sass */
+.logo h1 {
+  color: #FFB8FF;
+  text-shadow: 5px 5px 0px #B26FB2;
+  text-align: center;
+  font-size: 6em;
+  line-height: 2em; }
+
+/* line 10, C:/dev/akflorals/sass/2-modules/_nav.sass */
+nav {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+  /* line 14, C:/dev/akflorals/sass/2-modules/_nav.sass */
+  nav ul {
+    display: flex;
+    justify-content: space-between; }
+    /* line 17, C:/dev/akflorals/sass/2-modules/_nav.sass */
+    nav ul li {
+      list-style: none;
+      width: 100%;
+      margin: 0 0.5em; }
+      /* line 21, C:/dev/akflorals/sass/2-modules/_nav.sass */
+      nav ul li a {
+        display: block;
+        text-align: center;
+        color: #B26FB2;
+        text-transform: uppercase;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 3px solid;
+        padding: 0.5em;
+        transition: all 300ms ease-in-out; }
+        /* line 31, C:/dev/akflorals/sass/2-modules/_nav.sass */
+        nav ul li a:hover {
+          background-color: #FFB8FF; }
+    /* line 34, C:/dev/akflorals/sass/2-modules/_nav.sass */
+    nav ul li.active a {
+      background-color: #B26FB2;
+      color: #fff; }
+
+/* line 37, C:/dev/akflorals/sass/2-modules/_nav.sass */
+section {
+  width: 100%;
+  max-width: 1180px;
+  margin: 3em auto;
+  padding: 1em;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5em rgba(0, 0, 0, 0.5); }
+
+/* line 49, C:/dev/akflorals/sass/2-modules/_nav.sass */
+#carousel .item img {
+  display: block;
+  width: 100%;
+  max-width: 1180px;
+  height: auto;
+  border-radius: 5px 5px 0px 0px;
+  margin: 0 auto; }
+
 /*# sourceMappingURL=main.css.map */

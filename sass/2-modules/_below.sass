@@ -34,6 +34,9 @@ section.below
       border-radius: 0px 5px 5px 0px
       color: #fff
       position: absolute
+      transition: all 150ms ease-in-out
+      &:hover
+        padding: 1em 1.5em
   .contact
     width: 40%
     border-radius: 0px 5px 5px 0px
@@ -49,3 +52,24 @@ section.below
       line-height: 0.5
     a
       color: $light-green
+      &:hover
+        color: white
+@media (max-width: 1050px)
+  section.below
+    div
+      padding: 1em
+    .mailing-list
+      width: 50%
+      input
+        width: 50%
+    .contact
+      width: 50%
+@media (max-width: 700px)
+  section.below
+    flex-wrap: wrap
+    .mailing-list
+      width: 100%
+      border-radius: 5px 5px 0px 0px
+    .contact
+      width: 100%
+      border-radius: 0px 0px 5px 5px

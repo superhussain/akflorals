@@ -121,3 +121,37 @@ footer
   height: 1%
 .clearfix
   display: block
+
+// head
+
+.content .head
+  margin: 0 auto
+  width: 100%
+  text-align: center
+  overflow: hidden
+  h1
+    margin: 1em 0
+    background-color: white
+    position: relative
+    display: inline-block
+    padding: 0 10px
+    &:before
+      content: ""
+      height: 5px
+      //border-top: 1px solid $blue
+      //border-bottom: 1px solid $blue
+      background-color: $dark-pink
+      position: absolute
+      width: 100%
+      top: 50%
+      left: -110%
+    &:after
+      content: ""
+      height: 5px
+      //border-top: 1px solid $blue
+      //border-bottom: 1px solid $blue
+      background-color: $dark-pink
+      position: absolute
+      width: 100%
+      top: 50%
+      left: 110%

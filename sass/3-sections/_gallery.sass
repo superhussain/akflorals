@@ -4,7 +4,7 @@ section.gallery
   margin: 3em auto
   #padding: 2em 4em
   box-sizing: border-box
-  background-color: #fff
+  background-color: $bg-pink
   border-radius: 5px
   box-shadow: 0px 0px 5em rgba(0,0,0,0.5)
   .content
@@ -13,9 +13,10 @@ section.gallery
       margin: 3em 0
     h2
       color: lighten($dark-pink, 15%)
+      text-align: center
     .gallery-wrapper
       text-align: center
-      display: flex
+      display: none //flex
       justify-content: space-around
       flex-wrap: wrap
       a

@@ -130,8 +130,9 @@ footer
   text-align: center
   overflow: hidden
   h1
+    font-family: "Vivaldi", cursive
     margin: 1em 0
-    background-color: white
+    background-color: transparent
     position: relative
     display: inline-block
     padding: 0 10px
@@ -155,3 +156,10 @@ footer
       width: 100%
       top: 50%
       left: 110%
+
+// section content padding fix
+@media (max-width: 640px)
+  section .content
+    padding: 1.5em !important
+    .head h1
+      font-size: 36px

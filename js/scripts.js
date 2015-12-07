@@ -45,4 +45,3 @@ hamburger = function() {
     $('nav ul').slideToggle('slow');
   })
 }
-

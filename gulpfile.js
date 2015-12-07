@@ -76,7 +76,7 @@ gulp.task('watch', function() {
 gulp.task('default', [
   'scripts',
   'styles',
-  'image',
+  //'image',
   'serve',
   'watch'
 ]);

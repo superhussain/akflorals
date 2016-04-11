@@ -61,9 +61,9 @@ gulp.task('serve', function() {
           }
         }
       },
-      directoryListing: true,
+      directoryListing: false,
       open: true,
-      fallback: 'index.html'
+      path: '/'
     }));
 });
 

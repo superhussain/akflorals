@@ -5,6 +5,9 @@ var uglify = require('gulp-uglify'),
     sass = require('gulp-ruby-sass'),
     livereload = require('gulp-livereload'),
     imagemin = require('gulp-imagemin'),
+    imageResize = require('gulp-image-resize'),
+    parallel = require('concurrent-transform'),
+    os = require('os'),
     prefix = require('gulp-autoprefixer'),
     serve = require('gulp-webserver');
 
@@ -21,7 +24,7 @@ gulp.task('scripts', function() {
   gulp.src('js/*.js')
   .pipe(uglify())
   .on('error', errorLog)
-  .pipe(gulp.dest('build/js'));
+  .pipe(gulp.dest('js/build'));
 });
 
 // styles task
@@ -32,7 +35,7 @@ gulp.task('styles', function() {
 //  }))
   return sass('sass/*.scss', { style: 'compressed' })
   .on('error', errorLog)
-  .pipe(prefix('last 5 versions'))
+  .pipe(prefix('last 7 versions'))
   .pipe(gulp.dest('css'))
   .pipe(livereload());
 });
@@ -62,6 +65,16 @@ gulp.task('serve', function() {
       open: true,
       fallback: 'index.html'
     }));
+});
+
+// gallery task 
+gulp.task('gallery', function() {
+  gulp.src('img/gallery/**/*.{jpg,png}')
+  .pipe(parallel(
+    imageResize({height : 100}),
+    os.cpus().length
+  ))
+  .pipe(gulp.dest('img/gallery-thumbs'))
 });
 
 // watch task
